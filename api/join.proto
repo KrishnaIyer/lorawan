@@ -13,8 +13,14 @@
 // limitations under the License.
 
 syntax = "proto3";
-
 package lorawan.v1;
+
+import "github.com/envoyproxy/protoc-gen-validate/validate/validate.proto";
 
 option go_package = "go.krishnaiyer.dev/lorawan/pkg/pbgen";
 
+message JoinRequest {
+  bytes join_eui = 1 [(validate.rules).bytes.len = 8];
+  bytes dev_eui = 2 [(validate.rules).bytes.len = 8];
+  bytes dev_nonce = 3 [(validate.rules).bytes.len = 2];
+}
