@@ -10,6 +10,8 @@ This implementation is compliant with the LoRaWAN Specification which can be fou
 
 This codebase is heavily inspired by [The Things Stack](https://github.com/thethingsnetwork/lorawan-stack).
 
+- [protoc-gen-validate](https://github.com/envoyproxy/protoc-gen-validate): Validation of Protobuf messages.
+
 ## License
 
 The contents of this repository are provided "as-is" under the terms of the [Apache 2.0 License](./LICENSE).
